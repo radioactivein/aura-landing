@@ -16,60 +16,6 @@
     <!--meta name-->
     <meta name="title" content="Aura Foods – Manufacturer & Exporter of Premium Salted Snacks" >
     <meta name="description" content="Aura Foods, based in Kerala, produces and exports premium banana chips, tapioca chips, jackfruit chips & mixtures. Wholesale, custom packaging, global delivery." >
-    
-    <!--canonical-->
-    <link rel="canonical" href="https://aurafoodsintl.in/" />
-    
-    <!--opengraph-->
-    <meta property="og:title" content="Aura Foods – Manufacturer & Exporter of Premium Salted Snacks" />
-    <meta property="og:description" content="Aura Foods, based in Kerala, produces and exports premium banana chips, tapioca chips, jackfruit chips & mixtures. Wholesale, custom packaging, global delivery." />
-    <meta property="og:url" content="https://aurafoodsintl.in/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Aura Foods International" />
-    <meta property="og:image" content="https://aurafoodsintl.in/images/deli-img.png" />
-    <meta property="og:image:alt" content="Aura Foods premium banana and tapioca chips" />
-
-    <!--schema-->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Aura Foods International",
-      "url": "https://aurafoodsintl.in/",
-      "logo": "https://aurafoodsintl.in/images/logo.png",
-      "sameAs": [
-        "https://www.facebook.com/aurafoodsintl",
-        "https://www.facebook.com/profile.php?id=61573130937301"
-      ],
-      "description": "Aura Foods, based in Kerala, produces and exports premium banana chips, tapioca chips, jackfruit chips & mixtures. Wholesale, custom packaging, global delivery.",
-      "foundingDate": "2008",
-      "founder": {
-        "@type": "Person",
-        "name": "Aura Foods Pvt Ltd"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Kerala",
-        "addressCountry": "IN"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+91 6385822332",
-        "contactType": "Customer Service",
-        "areaServed": "Worldwide"
-      }
-    }
-    </script>
-    
-     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HM7GJV8EYC"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-HM7GJV8EYC');
-    </script>
 
 </head>
 <body id="style1">
@@ -84,10 +30,10 @@
               <a class="navbar-brand" href="/">
                 <img src="images/logo.png" alt="">
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              </button> -->
+              <!-- <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/">Home</a>
@@ -104,44 +50,44 @@
                         <a class="dropdown-item" href="banana-chips.php" >
                           Banana chips
                         </a>
-                        <!-- <ul class="dropdown-menu">
+                        <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="banana-chips.php#salted">salted Banana chips</a></li>
                           <li><a class="dropdown-item" href="banana-chips.php#sweet">sweet Banana chips </a></li>
                           <li><a class="dropdown-item" href="banana-chips.php#chilly">Chilly Banana chips</a></li>
                           <li><a class="dropdown-item" href="banana-chips.php#cheesy">Cheesy Banana chips </a></li>
                           <li><a class="dropdown-item" href="banana-chips.php#cut">Cut chips </a></li>
-                        </ul> -->
+                        </ul>
                       </li>
                       <li><hr class="dropdown-divider"></li>
                       <li class="dropend">
                         <a class="dropdown-item" href="mixture.php" >
                           Mixture 
                         </a>
-                        <!-- <ul class="dropdown-menu">
+                        <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="mixture.php#kerala">Kerala Mixture</a></li>
                           <li><a class="dropdown-item" href="mixture.php#mumbai">Mumbai Mixture</a></li>
                           <li><a class="dropdown-item" href="mixture.php#sharjah">Sharjah Mixture</a></li>
-                        </ul> -->
+                        </ul>
                       </li>
                       <li><hr class="dropdown-divider"></li>
                       <li class="dropend">
                         <a class="dropdown-item" href="muruku.php" >
                           Muruku 
                         </a>
-                        <!-- <ul class="dropdown-menu">
+                        <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="muruku.php#malabar">malabar Muruku</a></li>
                           <li><a class="dropdown-item" href="muruku.php#baby">baby malabar Muruku</a></li>
-                        </ul> -->
+                        </ul>
                       </li>
                       <li><hr class="dropdown-divider"></li>
                       <li class="dropend">
                         <a class="dropdown-item" href="tapioca-kasava-chips.php" >
                           Tapioca / kasava chips 
                         </a>
-                        <!-- <ul class="dropdown-menu">
+                        <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="tapioca-kasava-chips.php#salted">Tapioca salted chips</a></li>
                           <li><a class="dropdown-item" href="tapioca-kasava-chips.php#chilly">Tapioca chilly chips</a></li>
-                        </ul> -->
+                        </ul>
                       </li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="jackfruit-chips.php">Jackfruit chips</a></li>
@@ -152,14 +98,14 @@
                   <li class="nav-item">
                     <a class="nav-link" href="gallery.php">Gallery</a>
                   </li>
-                  <!--<li class="nav-item">-->
-                  <!--  <a class="nav-link" href="blogs.php">Blogs</a>-->
-                  <!--</li>-->
                   <li class="nav-item">
-                    <a class="nav-link" href="contact-us.php">Contact us</a>
+                   <a class="nav-link" href="blogs.php">Blogs</a>
                   </li>
                 </ul>
-              </div>
+              </div> -->
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.php">Contact us</a>
+              </li>
             </div>
           </nav>
     </header>
@@ -690,6 +636,10 @@ We export high-quality salted snacks across India and globally to any port on CI
                   <p>Copyright © 2025. Aura Foods India.</p>
                 </div>
               </div>
+              
+              <div class="col-lg-2"></div>
+              <div class="col-lg-2"></div>
+
               <div class="col-lg-4">
                 <div class="history js-scroll fade-in-bottom">
                   <h4>About the company</h4>
@@ -701,7 +651,7 @@ We export high-quality salted snacks across India and globally to any port on CI
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <!-- <div class="col-lg-3">
                 <div class="categories js-scroll fade-in-bottom">
                   <h4>Popular Categories</h4>
                   <ul class="foot-nav">
@@ -712,8 +662,8 @@ We export high-quality salted snacks across India and globally to any port on CI
                     <li><a href="jackfruit-chips.php">Jackfruit chips</a></li>
                   </ul>
                 </div>
-              </div>
-              <div class="col-lg-2">
+              </div> -->
+              <!-- <div class="col-lg-2">
                 <div class="useful js-scroll fade-in-bottom">
                   <h4>Useful Links</h4>
                   <ul class="foot-nav">
@@ -724,7 +674,7 @@ We export high-quality salted snacks across India and globally to any port on CI
                     <li><a href="banana-chips.php">Products</a></li>
                   </ul>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </section>
