@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!--meta name-->
     <meta name="title" content="Aura Foods – Manufacturer & Exporter of Premium Salted Snacks" >
@@ -103,8 +103,10 @@
                   </li>
                 </ul>
               </div> -->
-              <li class="nav-item">
-                <a class="nav-link" href="contact-us.php">Contact us</a>
+              <li class="nav-item d-flex gap-2 align-items-center">
+                <a class="nav-link" href="contact-us.php"> <i class="fa-solid fa-phone"></i> +97458711575</a>
+                |
+                <a class="nav-link contact-us" href="contact-us.php">Contact us</a>
               </li>
             </div>
           </nav>
