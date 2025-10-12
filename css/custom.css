@@ -3,7 +3,11 @@
 body {
     font-family: "Josefin Sans", serif;
 }
-
+ul,li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 .p-top-zero {
   padding-top: 0 !important;
 }

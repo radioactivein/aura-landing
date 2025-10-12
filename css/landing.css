@@ -1,0 +1,235 @@
+a{
+    display: inline-block;
+}
+ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+i.bi{
+    line-height: 0;
+}
+:root{
+    --primary-color: ;
+    --secondary-color: #fae26f;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+    color: white;
+    border-bottom: solid 1px #ffffff33;
+}
+header:has(.navbar-fixed){
+    background: #fff;
+    color: var(--primary-color);
+}
+
+section:not(#hero-banner,#challanges){
+    padding: 50px 0;
+}
+#hero-banner{
+    background: url('../landing-img/banner.png');
+    background-position: right center;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+#hero-banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, black,rgba(0, 0, 0, 0.681), transparent);
+    z-index: -1;
+}
+#hero-banner .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#hero-banner .container .content{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;  
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#hero-banner .content h1,
+#hero-banner .content h1 span{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1;
+}
+#hero-banner .content h1 span{
+    display: block;
+    /* color: #4bff7e; */
+    background: linear-gradient(to right,#4bff7e, #b7ff4b, #ffe760);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.point-pill {
+    display: flex;
+    align-items: cecc;
+    align-items: center;
+    gap: 10px;
+    background: #89ffc24f;
+    padding: 9px 11px;
+    border-radius: 100px;
+    border: solid 1px #ffffffa9;
+    /* line-height: 1; */
+    font-size: 13px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-weight: 400;
+}
+#hero-banner .buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#hero-banner h1+p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    max-width: 750px;
+}
+#hero-banner .buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#hero-banner .buttons a{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+#hero-banner .buttons .contact{
+    background: #fae26f;
+    color: #000;
+}
+#hero-banner .buttons .view{
+    background: #4bff7e;
+    color: #000;
+}
+
+.dot-points{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.dot-points li{
+    font-size: 15px;
+    font-weight: 400;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+.dot-points i{
+    font-size: 8px;
+    color: #4bff7e;
+    line-height: 1;
+}
+
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    gap: 10px;
+}
+.titles {
+    text-align: center;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 0 5px;
+}
+.titles > * {
+    margin: 0;
+}
+.titles h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+.titles p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #00000078;
+    max-width: 700px;
+    line-height: 1.3;
+}
+.card {
+    border: solid 2px #f0f0f0;
+    height: 100%;
+    display: flex;
+    padding: 15px 15px 9px;
+    gap: 10px;
+    min-height: 120px;
+    align-items: flex-start;
+}
+.card.right {
+    flex-direction: row;
+}
+.card *{
+    margin: 0;
+}
+.card .icon-box {
+    padding: 5px;
+    background: #3bb87721;
+    border-radius: 7px;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    color: #3bb877;
+    /* width: max-content; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .data{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card h3{
+    font-size: 19px;
+    font-weight: 600;
+}
+.card p {
+    font-size: 16px;
+    color: #0000008d;
+    line-height: 1.3;
+}
+
+#challanges .card .icon-box {
+    background: #ff000021;
+    color: red;
+}
