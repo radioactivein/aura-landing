@@ -234,7 +234,7 @@ section:not(#hero-banner, #challanges) {
 }
 
 .card.right {
-    flex-direction: row;
+    /* flex-direction: row; */
     /* border-color: #ff000014; */
     background: #fff6f6;
 
@@ -304,7 +304,7 @@ section:not(#hero-banner, #challanges) {
     border-radius: 20px;
     margin: 10px;
     background-image:
-        linear-gradient(to top, #000000, #00000066),
+        linear-gradient(to bottom, #000000, #00000066),
         url('../landing-img/container.png');
     background-size: cover;
     background-position: center;
@@ -319,7 +319,7 @@ section:not(#hero-banner, #challanges) {
     width: max-content;
     margin: 0 auto;
     background: #ffffff1f;
-    padding: 10px;
+    padding: 7px 10px;
     border-radius: 100px;
     border: solid 1px #ffffff0d;
     font-size: 15px;
@@ -332,6 +332,12 @@ section:not(#hero-banner, #challanges) {
 #game-changer h2+p {
     color: rgba(255, 255, 255, 1);
 }
+
+#game-changer h2+p span{
+    color: #62ffae;
+    display: block;
+}
+
 
 #game-changer .lists {
     display: flex;
@@ -394,9 +400,75 @@ section:not(#hero-banner, #challanges) {
     line-height: 1;
 }
 
+.explore {
+    background: #f7e8aa36;
+    color: #fff5ce;
+    padding: 4px 10px;
+    text-align: center;
+    /* width: max-content; */
+    margin: auto;
+    border-radius: 10px;
+}
 
-#contact-us{
-    background: linear-gradient(60deg, #3bb877, #4bff7e,#029c2e);
+#contact-us {
+    background: linear-gradient(-60deg, #162851, #067249, #1c3059);
+    color: #ffffff;
+}
+#contact-us .contact-info *{
+    margin: 0;
+}
+
+#contact-us .contact-info {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    gap: 25px;
+}
+
+#contact-us .contact-info h5 {
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+    max-width: 600px;
+}
+
+#contact-us .contact-info p {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    max-width: 600px;
+}
+#contact-us .icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: rgb(255 255 255 / 13%);
+    border-radius: 8px;
+    font-size: 20px;
+}
+#contact-us .data a{
+    color: white;
+}
+
+#contact-us .contact {
+    background: rgb(255 255 255 / 20%);
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    max-width: 400px;
+    margin: auto;
+}
+#contact-us form button{
+    background: #f9e58a;
+    color: black;
+    border: none;
 }
 
 /* responsive */
