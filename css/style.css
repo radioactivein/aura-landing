@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    align-items: center;
+    margin-top: 80px;
+}
+
+
+/* header */
+header {
+    position: fixed;
+    background: #fffcfc;
+    width: 100%;
+    /* display: flex; */
+    /* align-items: center; */
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    height: 80px;
+}
