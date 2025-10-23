@@ -4,7 +4,9 @@ body{
     gap: 90px;
     align-items: center;
     margin-top: 80px;
+    background-color: var(--bg-color);
 }
+
 
 
 /* header */
@@ -24,4 +26,25 @@ header {
     justify-content: space-between;
     gap: 10px;
     height: 80px;
+}
+
+
+:root{
+    --bg-color: #EBECEB;
+
+}
+
+
+/* hero */
+
+.fixed-img img{
+    /* transition: 0.3s; */
+    animation: rotate 10s linear infinite ; 
+}
+
+/* animations */
+@keyframes rotate{
+    to{
+        rotate: 360deg;
+    }
 }
