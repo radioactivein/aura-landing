@@ -3,3 +3,65 @@
         right: 53px;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+
+    :root {
+        --heading-1: 45px;
+        --heading-2: 30px;
+        --heading-3: 20px;
+    }
+
+    .header nav ul {
+        display: none;
+    }
+
+    .header nav ul.active{
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        background: white;
+        width: 100vw;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    button.mobile-menu-btn {
+        display: flex;
+        z-index: 2;
+    }
+
+    .hero-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        line-height: 1;
+    }
+
+    .hero-image .img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        left: -13px;
+        min-height: 40vh;
+    }
+
+    .fixed-img {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 650px) {
+    .product-carousel {
+        display: none !important;
+    }
+}

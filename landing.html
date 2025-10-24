@@ -30,7 +30,14 @@
                         <li><a href="#why-us">Why us</a></li>
                     </ul>
                 </nav>
-                <a href="#contact" class="btn-primary">  Contact <i class="fa-solid fa-arrow-right"></i></a>
+                <div class="d-flex gap-2 align-items-center">
+                    <a href="#contact" class="btn-primary"> Contact <i class="fa-solid fa-arrow-right"></i></a>
+                    <button class="mobile-menu-btn ">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -38,7 +45,7 @@
 <!-- hero -->
     <section id="hero">
         <div class="container">
-            <div class="row">
+            <div class="row g-lg-4 g-sm-3 g-2">
                 <div class="col-md-6">
                     <div class="hero-content">
                         <h1 data-aos="fade-up" data-aos-duration="1000">Authentic Kerala Snacks, Exported Globally</h1>
@@ -422,7 +429,7 @@
 
 <!-- scripts -->
     <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
     <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="js/aos.min.js"></script>
     <script src="js/slick.min.js"></script>
@@ -440,7 +447,7 @@
                 speed: 4000,
                 cssEase: 'linear',
                 slidesToShow: 4,
-                adaptiveHeight: false,
+                // adaptiveHeight: false,
                 autoplay: true,
                 arrows: false,
                 autoplaySpeed: 0,
@@ -449,19 +456,18 @@
                         breakpoint: 1024,
                         settings: {
                             slidesToShow: 3,
-                            infinite: true,
                         }
                     },
                     {
-                        breakpoint: 600,
+                        breakpoint: 768,
                         settings: {
-                            slidesToShow: 2,
+                            slidesToShow: 3,
                         }
                     },
                     {
                         breakpoint: 480,
                         settings: {
-                            slidesToShow: 1,
+                            slidesToShow: 2,
                         }
                     }
                 ]
