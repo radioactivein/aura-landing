@@ -247,6 +247,12 @@ nav ul li a{
     letter-spacing: -1px;
     text-transform: uppercase;
 }
+.hero-content .buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
 .hero-image {
     height: 100%;
     position: relative;
@@ -441,15 +447,6 @@ nav ul li a{
     color: var(--primary-icon);
 }
 
-/********* contact form ***********/
-.contact{
-    width: 100%;
-    /* padding: 60px 0; */
-}
-.contact h2{
-    max-width: 600px;
-    word-wrap: normal;
-}
 
 footer{
     margin-top: -140px;
@@ -463,24 +460,41 @@ footer .cnt-links{
     gap: 10px;
     margin-top: 20px;
 }
+footer hr{
+    margin: 50px 0;
+    background: var(--secondary-dim);
+    height: 1px;
+    border: none;
+}
+
+/********* contact form ***********/
+
 /* #contact .cnt-links *{
     margin: 0;
 } */
-
-footer .cnt-links .cnt-link{
+.contact{
+    width: 100%;
+    /* padding: 60px 0; */
+}
+.contact h2{
+    max-width: 600px;
+    word-wrap: normal;
+    color: var(--secondary);
+}
+.contact .cnt-links .cnt-link{
     display: flex;
     align-items: center;
     gap: 10px;
 }
-footer .cnt-links .cnt-link:hover .icon{
+.contact .cnt-links .cnt-link:hover .icon{
     background: var(--primary);
     /* color: var(--secondary); */
 }
-footer .cnt-links .cnt-link:hover .icon i{
+.contact .cnt-links .cnt-link:hover .icon i{
     color: var(--secondary);
 }
 
-footer .icon{
+.contact .icon{
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -491,23 +505,46 @@ footer .icon{
     border: solid 1px var(--secondary-border-dim);
     transition: 0.4s ease-in-out;
 }
-footer .icon i{
+.contact .icon i{
     color: var(--primary);
     transition: 0.4s ease-in-out;
 }
-footer .cnt-link > div{
+.contact .cnt-link > div{
     display: flex;
     flex-direction: column;
     gap: 0px;
     line-height: 1.2;
 }
-footer .cnt-links .cnt-link a{
+.contact .cnt-links .cnt-link a{
     color: var(--primary-text);
     text-decoration: none;
 }
-footer .cnt-links .cnt-link a:hover{
+.contact .cnt-links .cnt-link a:hover{
     color: var(--primary);
 }
-footer .cnt-links .cnt-link a:hover i{
+.contact .cnt-links .cnt-link a:hover i{
     color: var(--primary);
+}
+
+form{
+
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    color: var(--secondary-text);
+    margin-bottom: 10px;
+}
+.form-group label{
+    font-size: var(--text-2);
+}
+.form-group input,.form-group textarea{
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px var(--secondary-border-dim);
+    color: var(--primary-text);
+}
+.form-group input{
+    
 }

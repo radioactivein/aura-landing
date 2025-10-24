@@ -41,13 +41,13 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="hero-content">
-                        <h1>Authentic Kerala Snacks, Exported Globally</h1>
-                        <p>Supplying premium Kerala snacks since 2014 — factory-direct, quality-assured, and ready for
+                        <h1 data-aos="fade-up" data-aos-duration="1000">Authentic Kerala Snacks, Exported Globally</h1>
+                        <p data-aos="fade-up" data-aos-duration="1500">Supplying premium Kerala snacks since 2014 — factory-direct, quality-assured, and ready for
                             international markets.</p>
                         <div class="buttons">
-                            <a href="#contact" class="btn-primary">CONTACT US <i class="fa-solid fa-arrow-right"></i>
+                            <a href="#contact" class="btn-primary" data-aos="fade-up" data-aos-duration="2000">CONTACT US <i class="fa-solid fa-arrow-right"></i>
                             </a>
-                            <a href="#contact" class="btn-secondary">GET A QUOTE <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="#contact" class="btn-secondary" data-aos="fade-up" data-aos-duration="2500">GET A QUOTE <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
             <div class="qualities">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="quality-card">
+                        <div class="quality-card" data-aos="fade-up" data-aos-duration="1000">
                             <img src="img/premium.svg" alt="">
                             <hr>
                             <h3>Premium Quality Chips</h3>
@@ -81,7 +81,7 @@
                         </div>
                     </div>      
                     <div class="col-md-4">
-                        <div class="quality-card">
+                        <div class="quality-card" data-aos="fade-up" data-aos-duration="1500">
                             <img src="img/kerala.svg" alt="">
                             <hr>
                             <h3>Trusted Exporter from Kerala</h3>
@@ -89,7 +89,7 @@
                         </div>
                     </div>      
                     <div class="col-md-4">
-                        <div class="quality-card">
+                        <div class="quality-card" data-aos="fade-up" data-aos-duration="2000">
                             <img src="img/package.svg" alt="">
                             <hr>
                             <h3>Custom & White Label Packaging</h3>
@@ -363,29 +363,40 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" placeholder="Name">
+                                            <label for="name">Name</label>
+                                            <input type="text" placeholder="Name" id="name">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="email" placeholder="Email">
+                                            <label for="email">Email</label>
+                                            <input type="email" placeholder="Email" id="email">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" placeholder="Phone">
+                                            <label for="phone">Phone</label>
+                                            <input type="text" placeholder="Phone" id="phone">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="place">Place</label>
+                                            <input type="text" placeholder="Place" id="place">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                    <label for="message">Message</label>
+                                    <textarea name="" id="message" cols="30" rows="10"></textarea>
                                 </div>
-                                <button type="submit">Send Message</button>
+                                <input type="submit" value="Send Message">
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
+            <hr>
             <div class="row">
                 <div class="col-md-4">
                     <div class="footer-cnt">
@@ -417,7 +428,7 @@
     <script src="js/slick.min.js"></script>
     <script>
         AOS.init({
-            once:true,
+            // once:true,
             easing:'ease-in-sine',
         })
     </script>
