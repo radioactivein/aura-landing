@@ -24,6 +24,9 @@
     --font-text-letter-spacing:-0.02em;
     /* --font-primary: 45px; */
 }
+html, body{
+    overflow-x: hidden;
+}
 
 ul,li{
     list-style: none;
@@ -58,7 +61,7 @@ span{
 /* ********* design system ********** */
 
 body{
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     gap: 140px;
     align-items: center;
@@ -72,6 +75,9 @@ p{
     line-height: 1.4;
     letter-spacing: -0.02em;
     color: var(--primary-text);
+}
+section{
+    padding: 80px 0;
 }
 
 .subtitle{
@@ -105,8 +111,8 @@ h2 {
 }
 
 
-a.btn-primary,
-a.btn-secondary {
+.btn-primary,
+.btn-secondary {
     padding: 15px 25px;
     border-radius: 100px;
     transition: 0.2s ;
@@ -117,37 +123,37 @@ a.btn-secondary {
     gap: 5px;
     align-items: center;
 }
-a.btn-primary{
+.btn-primary{
     background: var(--primary);
     color: var(--secondary);
 }
-a.btn-primary:hover,
-a.btn-primary:focus,
-a.btn-primary:active,
-a.btn-secondary:hover,
-a.btn-secondary:focus,
-a.btn-secondary:active{
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active{
     /* background: var(--secconday-dim); */
     /* color: var(--bg); */
     box-shadow: inset 0px 0 0 1px var(--secondary);
     /* border-color: var(--secondary-dim); */
     transition: 0.3s ease-in-out;
 }
-a.btn-primary i,
-a.btn-secondary i{
+.btn-primary i,
+.btn-secondary i{
     transition: 0.3s ease-in-out;
     transform: rotate(-45deg);
 }
-a.btn-primary:hover i,
-a.btn-secondary:hover i{
+.btn-primary:hover i,
+.btn-secondary:hover i{
     transform: rotate(0deg) translateX(10px);
 }
 
-a.btn-secondary {
+.btn-secondary {
     border-color: var(--primary);
     color: var(--primary);
 }
-/* a.btn-secondary:hover{
+/* .btn-secondary:hover{
     color: var(--bg);
     box-shadow: inset 0px 0 0 1px var(--primary);
 }
@@ -157,11 +163,11 @@ a.btn-secondary i{
 a.btn-secondary:hover i{
     transform: translateX(5px);
 } */
-a.btn-secondary.alt{
+.btn-secondary.alt{
     color: var(--secondary);
     border-color: var(--secondary);
 }
-a.btn-secondary.alt:hover{
+.btn-secondary.alt:hover{
     color: var(--bg);
     box-shadow: inset 0px 0 0 1px var(--secondary);
 }
@@ -173,6 +179,18 @@ a.btn-secondary.alt:hover{
 }
 .center-cnt{
     align-items: center;
+}
+.sec-img{
+    width: 100%;
+    max-width: 489px;
+    height: 100%;
+}
+.sec-img > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
 }
 
 /********* header **********/
@@ -315,7 +333,7 @@ button.mobile-menu-btn{
 /********* qualities **********/
 #qualities{
     width: 100%;
-    margin-top: -140px;
+    /* margin-top: -140px; */
 }
 .quality-card{
     display: flex;
@@ -409,6 +427,7 @@ button.mobile-menu-btn{
 .products .heading-sec{
     align-items: center;
     margin-bottom: 40px;
+    text-align: center;
 }
 .products h2{
     width: 100%;
@@ -436,7 +455,7 @@ button.mobile-menu-btn{
 #lcl{
     width: 100%;
     background: var(--secondary-text-dim);
-    /* padding: 60px 0; */
+    padding: 60px 0;
 }
 .lcl *{
     margin: 0;
@@ -478,8 +497,8 @@ button.mobile-menu-btn{
 }
 
 
-footer{
-    margin-top: -140px;
+footer {
+    /* margin-top: -80px; */
     width: 100%;
     background: var(--bg-alt);
     padding: 80px 0;
@@ -511,17 +530,20 @@ footer hr{
     word-wrap: normal;
     color: var(--secondary);
 }
+.contact p{
+    color: var(--secondary-text);
+}
 .contact .cnt-links .cnt-link{
     display: flex;
     align-items: center;
     gap: 10px;
 }
 .contact .cnt-links .cnt-link:hover .icon{
-    background: var(--primary);
+    background: var(--secondary);
     /* color: var(--secondary); */
 }
 .contact .cnt-links .cnt-link:hover .icon i{
-    color: var(--secondary);
+    color: var(--primary-text);
 }
 
 .contact .icon{
@@ -536,21 +558,22 @@ footer hr{
     transition: 0.4s ease-in-out;
 }
 .contact .icon i{
-    color: var(--primary);
+    color: var(--secondary);
     transition: 0.4s ease-in-out;
 }
-.contact .cnt-link > div{
+.contact .cnt-link > div {
     display: flex;
     flex-direction: column;
     gap: 0px;
     line-height: 1.2;
+    color: var(--secondary-text-dim);
 }
 .contact .cnt-links .cnt-link a{
-    color: var(--primary-text);
+    color: var(--secondary-text);
     text-decoration: none;
 }
 .contact .cnt-links .cnt-link a:hover{
-    color: var(--primary);
+    color: var(--secondary);
 }
 .contact .cnt-links .cnt-link a:hover i{
     color: var(--primary);
