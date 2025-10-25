@@ -1,6 +1,22 @@
-$(document).ready(function(){
-    $('.mobile-menu-btn').click(function(){
+$(document).ready(function () {
+    $('.mobile-menu-btn').click(function () {
         $(this).toggleClass('active');
         $('nav ul').toggleClass('active');
     });
-})  
+
+
+    // Optional improvement: make scroll/touch listeners passive
+    jQuery.event.special.touchstart = {
+        setup: function (_, ns, handle) {
+            this.addEventListener("touchstart", handle, { passive: !ns.includes("noPreventDefault") });
+        }
+    };
+    jQuery.event.special.touchmove = {
+        setup: function (_, ns, handle) {
+            this.addEventListener("touchmove", handle, { passive: !ns.includes("noPreventDefault") });
+        }
+    };
+
+})
+
+
