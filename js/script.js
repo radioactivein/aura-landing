@@ -3,4 +3,4 @@ $(document).ready(function(){
         $(this).toggleClass('active');
         $('nav ul').toggleClass('active');
     });
-})
+})  
