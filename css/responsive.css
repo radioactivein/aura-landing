@@ -93,13 +93,16 @@
     .stats {
         flex-wrap: wrap;
     }
-    .stats .count-item{
+
+    .stats .count-item {
         width: 45%;
     }
-    .stats span.hr.alt{
+
+    .stats span.hr.alt {
         display: none;
     }
-    .stats span.hr:nth-child(even){
+
+    .stats span.hr:nth-child(even) {
         margin: auto;
     }
 
@@ -107,8 +110,11 @@
     form {
         width: 100%;
         max-width: 500px;
-        margin: auto;
-        padding: 30px 0;
+        margin: 20px auto 0;
+        padding: 30px;
+    }
+    footer{
+        padding-bottom: 10px;
     }
 
 
