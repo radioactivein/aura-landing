@@ -535,9 +535,9 @@ button.mobile-menu-btn {
     padding: 60px 0;
 }
 
-.lcl * {
+/* .lcl * {
     margin: 0;
-}
+} */
 
 .lcl.right-cnt {
     justify-content: center !important;
@@ -729,7 +729,7 @@ form>.row>p {
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: var(--primary-text-dim);
+    color: rgb(192, 192, 192);
 }
 
 .form-group input {}

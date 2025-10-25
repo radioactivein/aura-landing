@@ -148,4 +148,8 @@
     .stats span.hr {
         height: 32px;
     }
+
+    form label{
+        display: none;
+    }
 }
