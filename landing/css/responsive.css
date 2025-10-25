@@ -20,7 +20,7 @@
     :root {
         --heading-1: 55px;
         --heading-2: 40px;
-        --heading-3: 26px;
+        /* --heading-3: 29px; */
     }
 
     .lcl ul {
@@ -34,7 +34,7 @@
     :root {
         --heading-1: 50px;
         --heading-2: 45px;
-        --heading-3: 24px;
+        /* --heading-3: 28px; */
     }
 
     .header nav ul {
@@ -85,8 +85,11 @@
         min-height: 40vh;
     }
 
-    .fixed-img {
+    .fixed-img.white {
         display: none;
+    }
+
+    .fixed-img.alt {
         width: 100px;
     }
 
@@ -98,14 +101,13 @@
         width: 45%;
     }
 
-    .stats span.hr.alt {
-        display: none;
-    }
-
     .stats span.hr:nth-child(even) {
         margin: auto;
     }
 
+    .sec-img>img {
+        min-width: 90vw;
+    }
 
     form {
         width: 100%;
@@ -113,14 +115,19 @@
         margin: 20px auto 0;
         padding: 30px;
     }
-    footer{
+
+    footer {
         padding-bottom: 10px;
     }
 
 
 }
 
-
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .stats span.hr.alt {
+        display: none;
+    }
+}
 
 
 @media screen and (max-width: 650px) {
@@ -128,9 +135,21 @@
         /* display: none !important; */
         /* width: 50px */
     }
+
+    .lcl .cnt-img .img {
+        width: 100%;
+        max-width: 400px;
+    }
 }
 
 @media screen and (max-width: 576px) {
+
+    :root {
+        --heading-1: 40px;
+        --heading-2: 35px;
+        --heading-3: 29px;
+    }
+
     .fixed-img.white {
         position: absolute;
         bottom: -53px;
@@ -149,7 +168,29 @@
         height: 32px;
     }
 
-    form label{
+    form label {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 470px) and (max-width: 768px) {
+    .fixed-img.alt {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header .btn-primary {
+        display: none;
+    }
+
+    .count h4 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .fixed-img.alt {
         display: none;
     }
 }

@@ -4,6 +4,14 @@ $(document).ready(function () {
         $('nav ul').toggleClass('active');
     });
 
+    // menu close on click
+    $('nav ul li a').click(function () {
+        if ($('nav ul').hasClass('active')) {
+            $('nav ul').removeClass('active');
+            $('.mobile-menu-btn').removeClass('active');
+        }
+    });
+
 
     // Optional improvement: make scroll/touch listeners passive
     jQuery.event.special.touchstart = {
