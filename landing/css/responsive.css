@@ -37,10 +37,9 @@
         /* --heading-3: 28px; */
     }
 
-    .header nav ul {
+    /* .header nav ul {
         display: none;
     }
-
     .header nav ul.active {
         display: flex;
         position: fixed;
@@ -54,15 +53,13 @@
         justify-content: center;
         z-index: 1;
     }
-
     button.mobile-menu-btn {
         display: flex;
         z-index: 2;
     }
-
     #hero {
         margin-top: 80px;
-    }
+    } */
 
     #hero .btn-secondary {
         display: none;
@@ -181,7 +178,9 @@
 
 @media screen and (max-width: 425px) {
     header .btn-primary {
-        display: none;
+        /* display: none; */
+        padding: 10px 14px;
+        font-size: 15px;
     }
 
     .count h4 {

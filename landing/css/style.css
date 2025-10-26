@@ -227,15 +227,12 @@ a.btn-secondary:hover i{
 
 /********* header **********/
 header {
-    position: fixed;
+    /* position: fixed; */
     background: var(--bg);
-    border-bottom: solid 1px var(--secondary-text-dim);
+    /* border-bottom: solid 1px var(--secondary-text-dim); */
     width: 100%;
     /* display: flex; */
     /* align-items: center; */
-    left: 0;
-    top: 0;
-    z-index: 99;
 }
 
 .header {
@@ -302,7 +299,7 @@ button.mobile-menu-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 50px 0;
 }
 
@@ -496,9 +493,10 @@ button.mobile-menu-btn {
 
 /********* products **********/
 
-.products{
+.products {
     height: 100%;
 }
+
 .products .heading-sec {
     align-items: center;
     margin-bottom: 40px;
@@ -738,7 +736,7 @@ form>.row>p {
 
 .form-group textarea {}
 
-.footer-cnt ul{
+.footer-cnt ul {
     text-transform: uppercase;
     gap: 10px;
     display: flex;
